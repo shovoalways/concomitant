@@ -1,0 +1,47 @@
+/*Teblet Layout*/
+@media only screen and (min-width:200px) and (max-width:991px){
+.container {max-width: 96%;} 
+.logo_area {width: 30%;}
+.right_header_area {width: 69%;}  
+.inner_header {padding: 0 2%;}   
+#mobile_menu .search_area {display: none;}
+.mean-container .mean-nav {margin-top: 0px;}   
+.menu_area ul li ul {position: relative;left: 0;top: 0;}  
+.menu_area ul ul ul {left: 0;}    
+.mean-container .mean-nav ul li a.mean-expand {height: 22px;}   
+.menu_area {width: 100%;}
+.slider_inner {width: 96%;padding: 15px 2%;} 
+    
+    
+    
+    
+}
+
+
+/*Mobile Layout*/
+@media only screen and (min-width:200px) and (max-width:480px){
+.logo_area {width: 200px;float: none;margin: 0 auto 10px;padding-top: 10px;}
+.right_header_area {width: 100%;}
+.social_area {background: none;width: 100%;padding: 10px 0;}  
+.social_area ul {text-align: center;}
+.top_menu ul {text-align: center;}  
+#service_area, .inner_work, .inner_footer {padding: 20px 0;}    
+.child_service, .child_work, .child_footer {width: 96%;}
+.child_work{text-align: center;}
+.child_work img {margin: 0 auto;}  
+.child_work a {color: #fff;float: none;background: #81b300;display: inline-block;padding: 10px 25px;}
+.child_footer a {float: left;} 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
