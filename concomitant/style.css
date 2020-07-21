@@ -1,0 +1,563 @@
+/*
+    Common CSS
+*/
+body {
+    margin: 0;
+    background: #1f1f1f
+}
+
+.container {
+    max-width: 960px;
+    width: 96%;
+    margin: 0 auto
+}
+
+.content{
+    max-width: 900px;
+    width: 96%;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+    Header Area
+*/
+#header_area {
+    background: #ffffff;
+    border-top: 5px solid #81b300;
+    clear: both;
+}
+
+.inner_header {
+    overflow: hidden;
+    padding: 0 30px;
+}
+
+.logo_area {
+    padding-top: 30px;
+    width: 300px;
+    float: left;
+}
+
+.right_header_area {
+    width: 590px;
+    float: right;
+}
+
+.social_area {
+    background: #81b300;
+    width: auto;
+    float: right;
+    padding: 20px 15px;
+    border-radius: 0 0 15px 15px;
+}
+
+.social_area ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right
+}
+
+.social_area ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.social_area ul li a {
+    display: block;
+    text-decoration: none;
+}
+
+.social_area ul li a i{
+    background: #1f1f1f;
+    width: 35px;
+    padding-top: 10px;
+    color: #fff;
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    height: 25px;
+    border-radius: 25px;
+    transition: 0.5s
+}
+
+.social_area ul li a:hover {
+    background: #435c01;
+    border-radius: 25px;
+}
+
+.social_area ul li a:hover i.fa-twitter{
+    background: #00acee;
+}
+
+.social_area ul li a:hover i.fa-linkedin-in{
+    background: #0076B2;
+}
+
+.social_area ul li a:hover i.fa-pinterest{
+    background: #BD081C;
+}
+
+.social_area ul li a:hover i.fa-google-plus-g{
+    background: #DC4B3E;
+}
+
+.social_area ul li a:hover i.fa-rss{
+    background: #F58023;
+}
+
+.top_menu {
+    width: 100%;
+    float: right;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.top_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+
+.top_menu ul li{
+    display: inline-block;
+    margin: 0 8px;
+    position: relative
+}
+
+.top_menu ul li::after {
+	position: absolute;
+	content: "|";
+	right: -12px;
+	top: -1px;
+	color: #000;
+}
+
+.top_menu ul li:last-child::after {
+	display: none;
+}
+
+.top_menu ul li a{
+    color: #000;
+    font-family: Georgia;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.top_menu ul li a:hover{
+    color: #81b300;
+}
+
+/*
+    Manu Area
+*/
+#main_menu{
+    background: #81b300;
+    padding: 15px 0;
+}
+.inner_menu{
+    min-height: 28px;
+}
+.menu_area{
+    float: left;
+    max-width: 600px;
+    width: 75%;
+    padding-top: 5px;
+}
+.menu_area ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+.menu_area ul li{
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+}
+.menu_area ul li a{
+    font-size: 15px;
+    color: #fff;
+    padding: 5px 0;
+    font-weight: normal;
+    text-decoration: none;
+}
+.menu_area ul li a:hover{
+    color: #000;
+}
+
+
+/*
+ Dropdown menu Style
+*/
+.menu_area ul li ul{
+    position: absolute;
+    left: -999999px;
+    top:22px;
+    background: #000;
+    width: 180px;
+    z-index: 999999;
+}
+.menu_area ul li:hover ul{
+    left: 0px;
+}
+.menu_area ul ul li{
+    display: block;
+    margin-right: 0;
+    margin-bottom: 5px;
+}
+.menu_area ul ul li a{
+    display: block;
+    padding: 5px;
+}
+.menu_area ul ul li a:hover{
+    background: #81b300;
+    color: #fff;
+}
+.menu_area ul li:hover a{
+    color: #000;
+}
+.menu_area ul li:hover ul a{
+    color: #fff;
+}
+.menu_area ul ul li:hover a{
+     background: #81b300;
+}
+.menu_area ul ul li:hover ul a{
+     background: none;
+}
+.menu_area ul ul li ul a:hover{
+     background: #81b300;
+}
+
+
+/*
+    Step Three Dropdown Menu
+*/
+.menu_area ul ul ul{
+    left: -9999999px;
+    top: 0;
+}
+.menu_area ul li:hover ul ul{ 
+    left: -999999px;
+}
+.menu_area ul li ul li:hover ul{ 
+    left: 180px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===========================================
+    Search Area
+=============================================*/
+.search_area{
+    float: right;
+    max-width: 280px;
+    width: 25%
+}
+
+.search_area input{
+    width: 69%;
+    padding: 5px 1%;
+    border: 1px solid #ddd;
+    color: #000;
+    float: left;
+}
+
+.search_area input[type="submit"]{
+    width: 28%;
+    padding: 5px 1%;
+    border: 1px solid #ddd;
+    color: #81b300;
+    text-transform: uppercase;
+    float: left;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.search_area input[type="submit"]:hover{
+    background: #000;
+    border: 1px solid #000;
+    color: #fff;
+}
+
+
+
+
+
+
+/*===========================================
+    Slider Area
+=============================================*/
+
+#slider_area{
+    background:#f2f2f2;
+}
+.slider_inner{
+    width: 880px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.bx-wrapper{
+    margin-bottom: 30px;
+}
+
+
+
+/*===========================================
+    Service Area
+=============================================*/
+#service_area{
+    background: #fff;
+    padding: 45px 0;
+}
+.inner_service{
+    overflow: hidden;
+}
+.child_service{
+    float: left;
+    text-align: center;
+    margin: 0 1% 10px;
+    padding: 0 1%;
+    width: 21%
+}
+.child_service img{
+    display: block;
+    margin: 0 auto 15px;
+}
+.child_service h3{
+    color: #81b300;
+    font-size: 18px;
+    font-weight: normal;
+}
+.child_service h3 a{
+    color: #81b300;
+    text-decoration: none;
+}
+.child_service h3:hover a{
+    color: #262626;
+}
+.child_service p{
+    color: #888888;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+
+
+
+
+/*===========================================
+    Work Area
+=============================================*/
+#work_area{
+    background: #fff;
+}
+.inner_work{
+    border-top: 1px solid #e2e2e2;
+    padding: 45px 0;
+    overflow: hidden
+}
+.child_work{
+    float: left;
+    margin: 0 1% 10px;
+    padding: 1%;
+    width: 21%;
+}
+.child_work img{
+    border: 1px solid #e2e2e2;
+    padding: 4px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.child_work h3{
+    color: #444444;
+    font-size: 18px;
+}
+.child_work p{
+    color: #878787;
+    font-size: 14px;
+}
+.child_work a{
+    color: #81b300;
+    font-size: 14px;
+    text-decoration: none;
+    float: right;
+}
+.child_work a:hover{
+    color: #262626;
+}
+
+
+/*===========================================
+    Footer Area
+=============================================*/
+#footer_area{
+    background: #3b3b3b;
+}
+.inner_footer{
+    padding: 45px 0;
+    overflow: hidden;
+}
+.child_footer{
+    color: #666666;
+    padding: 1%;
+    margin: 0 1% 10px;
+    float: left;
+    width: 21%
+}
+.child_footer h3{
+    color: #666666;
+    font-size: 18px;
+    margin-top: 0;
+    font-weight: bold;
+}
+.child_footer h4{
+    color: #999999;
+    font-size: 14px;
+    margin-top: 0;
+}
+.child_footer h4 a{
+    color: #999999;
+    float: none;
+    text-decoration: none;
+}
+.child_footer h4:hover a{
+    color: #81B300;
+}
+.child_footer h6{
+    color: #999999;
+    font-size: 12px;
+    margin: 0 0 10px;
+}
+.child_footer p{
+    color: #999999;
+    font-size: 14px;
+    margin-top: 0;
+}
+.child_footer ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+.child_footer li{
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+.child_footer li:last-child{
+    border-bottom: 0px solid;
+}
+.child_footer ul ul{
+    display: none;
+}
+.child_footer ul a{
+    color: #999999;
+    display: inline-block;
+    float: none;
+    padding: 5px 0;
+    text-decoration: none;
+}
+.child_footer ul a:hover{
+    color: #81B300
+}
+.child_footer a{
+    color: #81B300;
+    display: inline-block;
+    padding: 5px 0;
+    text-decoration: none;
+    float: right;
+}
+.child_footer a:hover{
+    color: #999999
+}
+.child_footer input{
+    background: #1f1f1f;
+    border: 0px solid;
+    color: #999999;
+    padding: 8px 2%;
+    margin-bottom: 8px
+}
+.child_footer input[type="submit"]{
+    color: #81B300;
+    font-size: 15px;
+    padding: 8px 25px;
+    cursor: pointer;
+}
+.child_footer input[type="submit"]:hover{
+    background: #81B300;
+    color: #fff;
+}
+
+
+/*Copyright Area*/
+#copyright_section{
+    background: #2e2e2e;
+}
+.copyright_area{
+    color: #737373;
+    padding: 15px 0;
+    overflow: hidden;
+}
+.copyright_area p{
+    color: #737373;
+    font-size: 12px;
+    margin: 0;
+}
+.left_copyright{
+    float: left;
+    width: 60%;
+}
+.right_copyright{
+    float: left;
+    width: 40%;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
